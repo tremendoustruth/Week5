@@ -1,7 +1,31 @@
-You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a function that takes the array as an argument and returns this “outlier” N.
+Oct 10 2022
 
-Examples:
+DBs
 
-[2, 4, 0, 100, 4, 11, 2602, 36] Should return: 11 (the only odd number)
+Table: base unit of info
+Record: row - individual item
+Field: inidivual attribute
+Database: collection of tables
+Relational DB: most useful objs have similar info, when complex questions are being asked about the data
 
-[160, 3, 1719, 19, 11, 13, -21] Should return: 160 (the only even number)
+SQL: lang for querying/creating/updating relational databases//english-like (SELECT color, PRICE FROM melons)//whitespace insignificant//case insensitive. SQL keywords are caps (convention)
+
+
+VARCHAR(n): defined num of chars in str
+FLOAT: up to 15 dec places
+BOOLEAN: TRUE or FALSE
+
+create table, we declare which data type a column will have as well as constraints (not null, etc)
+info has to match format
+
+select statement query but don't change the databases
+use FROM and WHERE to get raw data under certain condition (SELECT id FROM melon WHERE color==green )
+match any string LIKE "StartsWith%"
+BETWEEN
+IN (1,2,3)
+group by will group results together
+offset - how many rows to skip starting from top 
+
+update: change values in the field of a table//does not change structure of table
+delete is permanent// be careful 
+
