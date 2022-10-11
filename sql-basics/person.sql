@@ -1,4 +1,4 @@
-//problem 1
+-- //problem 1
 CREATE TABLE person (
   id SERIAL PRIMARY KEY,
   name VARCHAR(50),
@@ -7,7 +7,7 @@ CREATE TABLE person (
   height INT,
   favecolor VARCHAR(50))
 
-  //problem 2
+  -- //problem 2
 
 INSERT INTO person (name, city, age, height, favecolor) VALUES ('Allen', 'Dallas', 50, 180, 'red');
 INSERT INTO person (name, city, age, height, favecolor) VALUES ('Barbara', 'San Fransisco', 30, 160, 'blue');
@@ -15,40 +15,40 @@ INSERT INTO person (name, city, age, height, favecolor) VALUES ('Candace', 'Los 
 INSERT INTO person (name, city, age, height, favecolor) VALUES ('David', 'New York', 82, 190, 'yellow');
 INSERT INTO person (name, city, age, height, favecolor) VALUES ('Eileen', 'Houston', 17, 170, 'red');
 
-//problem 3
+-- //problem 3
 SELECT * FROM person ORDER BY height DESC;
 
-//problem 4
+-- //problem 4
 SELECT * FROM person ORDER BY height;
 
-//problem 5
+-- //problem 5
 SELECT * FROM person ORDER BY age DESC;
 
-//problem 6
+-- //problem 6
 SELECT * FROM person WHERE age>20;
 
-//problem 7
+-- //problem 7
 SELECT * FROM person WHERE age=18;
 
-//problem 8 
+-- //problem 8 
 SELECT * FROM person WHERE age <20 OR age>30;
 
-//problem 9
+-- //problem 9
 SELECT * FROM person WHERE age<>27;
 
-//problem 10
+-- //problem 10
 SELECT * FROM person WHERE favecolor<>'redd';
 
-//problem 11
+-- //problem 11
 SELECT * FROM person WHERE favecolor<>'red' AND favecolor<>'blue';
 
-//problem 12
+-- //problem 12
 SELECT * FROM person WHERE favecolor='green' OR favecolor='orange';
 
-//problem 13
+-- //problem 13
 SELECT * FROM person WHERE favecolor IN ('orange', 'green', 'blue');
 
-//problem 14
+-- //problem 14
 SELECT * FROM person WHERE favecolor IN ('yellow', 'purple');
 
 
