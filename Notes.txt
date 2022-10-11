@@ -29,3 +29,32 @@ offset - how many rows to skip starting from top
 update: change values in the field of a table//does not change structure of table
 delete is permanent// be careful 
 
+Oct 11 2022
+Normalization: planning db to avoid repetition, simplify data; every piece of data lives in exactly one place and relates to a key
+-want to avoid empty values in db; clutters db and creates extra issues/inefficiency 
+-two things to avoid:
+    -repeating dependencies (storting name and age type)
+    -repesending multiple data for the same category (phone 1, phone 2, etc)
+Relationship types:
+one to many - one row on table A can have many related rows on table B; one book, many printings (1 book_id in books can arise on many printing rows)
+many to many 
+one to one - ex. ssn, one for each person. / augment table with additional table // secial cateogies (authors are a special kind of user)/analogous to subclasses in object orientation
+
+foreign key = links tables to each other 
+
+Association table: glue betwen tables, midde tables have meaningful fields
+
+Brainstorming for lecture: 
+Process: think of user flow: what actions are they likely to take, what info are they going to be putting into the fields
+create table users (userid, firstname, lastname, email, pwd, username)
+create table groups (groupid, groupname, userid )
+create table posts (postid, userid, text)
+create table groupposts (groupPost_id)
+create table comments (commentid, userid, postid, text)
+create table contact info (contactid)
+relationships: 
+one to one: 1 user --> contactinfo//1 post --> 1 user//
+one to many: 1 post -> many pictures// 1 user --> many comments// 1 group --> many users// 1 group--> many posts //1 user-->many posts (group of standard)
+many to many: many users to many groups// 
+
+
