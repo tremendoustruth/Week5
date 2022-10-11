@@ -1,4 +1,4 @@
-//poblem 1
+//problem 1
 
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
@@ -19,4 +19,13 @@ INSERT INTO orders (person_id, product_name, product_price, quantity) VALUES (3,
 SELECT * FROM orders;
 
 //problem 4
+SELECT SUM(quantity) FROM orders;
+
+//problem 5
+SELECT product_price*quantity  AS total_price FROM orders;
+
+//problem 6
+SELECT SUM(product_price*quantity) FROM orders WHERE person_id=2;
+
+
 
