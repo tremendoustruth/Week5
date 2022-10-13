@@ -1,0 +1,74 @@
+Brainstorming:
+
+info we will need:
+userid
+username
+first name
+last name
+email
+pwd
+recipes (can be added to occasions))
+ingredients (name, category, specialty, quantity, desc(frozen, fresh, etc))
+instructions 
+comments 
+visibility (public or private)
+grocery lists  
+occasions (recipes, formality, date, themes)
+mealtype (breakfast, lunch, dinner, brunch, appetizers, desserts)
+cooktime
+difficulty level (beginner, intermediate, advanced)
+allergens (wheat, dairy, gluten, nuts, soy, eggs) 
+
+
+Tables/Relations
+
+//1-to-many: 
+1 userid --> many recipes  
+1 grocery list --> many ingredients 
+1 recipe --> many comments
+1 recipe -->
+1 user-->many pictures
+1 grocery list -->many recipes
+
+//1-to-1: 
+1 recipe-->instructions 
+1 userlist
+//many-to-many: 
+many recipes-->many grocerylists
+many grocerylists-->many ingredients
+
+Tables:
+CREATE TABLE users (userid, email, pwd, firstname, lastname)
+
+recipes(recipeid, title, userid foreign key, visibility, allergens, cooktime, mealtype, difficulty, cooktime, ingredients, instructions, visibility occasions)
+
+instrutions()
+
+ingredients(recipeid ) 
+
+
+grocerylists(listid, ingredients, userid, recipeid?)
+
+comments(commentid, userid, text, recipeid)
+
+pictures(pictureid, url, userid, recipeid)
+
+occasions(userid, occasionid, recipes, date, time, guestlist)
+
+`association table(`
+    associationid
+    recipeid
+    eventid
+)
+
+ingredients
+
+
+
+
+
+
+
+
+
+
