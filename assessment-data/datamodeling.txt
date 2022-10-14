@@ -1,18 +1,11 @@
 Brain storming:
 
-Pet table (
-    petid (spk), 
-    petname(varchar), 
-    color(varchar), weight(int), 
-    species(int), 
-    difficulty(int)
-    agency(int))
+Pet table (petid (spk),petname(varchar), color(varchar), weight(int),species(int),difficulty(int), agency(int))
 Adopter table (adopterid(spk), name(varchar), age(int), agency(int)), approval(boolean), matched(boolean)
 Species table (speciesid(spk), species_name(varchar), type(varchar), median_weight() difficulty(int), nutrition(text), ,)
 Agency Table (agencyid(spk) agency_name(varchar), city(varchar), state(varchar), hours(datetime), phone(phonenumber/int), availability(int))
 
 Table relations:
-
 //one-to-many:
 1 adopter-->many pets 
 1 agency-->many pets

@@ -1,4 +1,14 @@
+require('dotenv').config()
+const Sequelize = require('sequelize');
+let {CONNECTION_STRING} = process.env
+console.log(CONNECTION_STRING)
 
+const sequelize = new Sequelize(CONNECTION_STRING, {
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl: {
+            rejectUnauthorized: false
+}}})
 
 module.exports = {
     seed: (req, res) => {
