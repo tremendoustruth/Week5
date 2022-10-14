@@ -1,0 +1,59 @@
+Oct 13 2022
+Data Analysis Lifecycle 
+1. Define the question/identify business issue:
+    - define business objectives
+    - gather required information
+    - determine appropriate analysis method
+    - clarify scope of work
+2. Set initial requirements
+    - collect initial data 
+    - identify data requirements 
+    - determine data availability 
+    - explore data and characteristics
+3. Prepare Data
+    - gather data from  multiple sources
+    - cleanse
+    - format 
+    - blend 
+    - sample
+4. Explore and Analyze Data
+    - develop methodology 
+    - determine important variables 
+    - build model 
+    - assess model 
+5. Validate findings
+    - evaluate results 
+    - review process 
+    - determine next steps 
+    - if results valid: communite results
+    - if results invalid: repeat steps 1-4
+6. Communicate Results
+    - relay results
+    - determine best method to present insights based on analysis and audience 
+    - craft a compelling story
+    - make recommendations 
+
+Project Questions:
+1) What is the distribution of revenue of all companies?
+2) What is the distribution of the number of units for the companies overall?
+3) Which companies have the most franchise units (non-company-owned units)?
+4) Which companies have the most locations combined (franchise + company owned)?¶
+5) Which companies have the highest revenue per unit?
+6) Is there a correlation between the amount of sales per company and the company's total number of locations?
+
+Further Questions and Notes:
+-How do business objectives align with customer needs?
+-How does location impact sales/revenue?
+-How would increasing the price per unit impact revenue, total units sold, etc.
+-How many employees need to be hired to open franchise x? Attrition rate/employee turnover rate by location and year?
+
+Rule of Data Analytics: Must analyze the data without changing the meaning of it. 
+"If you torture the data long enough, it will confess to anything."
+Must communicate meaning with integrity, must find appropriate answers for well-defined questions.
+Don't forget to "understand the audience."
+
+Priorities: Simplicity, Context, Visualizations
+
+Reflect
+Pros: Digging for truth, story building, strategic decision making, big picture insights, newness of skill, high impact, translatable between industries
+Cons: Learning curve for excellence, responsibility, bias

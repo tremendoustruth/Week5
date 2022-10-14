@@ -23,45 +23,26 @@ allergens (wheat, dairy, gluten, nuts, soy, eggs)
 Tables/Relations
 
 //1-to-many: 
-1 userid --> many recipes  
-1 grocery list --> many ingredients 
-1 recipe --> many comments
-1 recipe -->
-1 user-->many pictures
-1 grocery list -->many recipes
+1 user-->many recipes (a single user can create many recipes, a unique recipe belongs to a single user)
+1 recipe-->many comments (each comment is unique to a recipe, a recipe does not require a comment)
+1 user-->many pictures (pictures posted are attached to a unique user, and each user can post many pictures)
+1 user-->many occasions (a user can create multiple unique occasions)
+1 occasion-->many recipes (can add multiple recipes to an occasion, like appetizers, main course, dessert, etc. Recipes are not unique to occasions.)
 
 //1-to-1: 
-1 recipe-->instructions 
-1 userlist
+1 recipe-->1 instructions (each unique recipe has its own unique set of instructions)
+1 user-->1 grocery list (grocery list acts as a shopping cart)
+1 occasion-->1 grocery list (an occasion must have groceries)
+
+
 //many-to-many: 
-many recipes-->many grocerylists
-many grocerylists-->many ingredients
+many ingredients-->many grocery lists (ingredients are not unique to users, lists, or recipes)
+many ingredients-->many recipes (ingredients are not unique to users, lists, or recipes)
+many occasions-->many recipes (each user can create multiple occasions and add multiple recipes from different user accounts)
+
+
 
 Tables:
-CREATE TABLE users (userid, email, pwd, firstname, lastname)
-
-recipes(recipeid, title, userid foreign key, visibility, allergens, cooktime, mealtype, difficulty, cooktime, ingredients, instructions, visibility occasions)
-
-instrutions()
-
-ingredients(recipeid ) 
-
-
-grocerylists(listid, ingredients, userid, recipeid?)
-
-comments(commentid, userid, text, recipeid)
-
-pictures(pictureid, url, userid, recipeid)
-
-occasions(userid, occasionid, recipes, date, time, guestlist)
-
-`association table(`
-    associationid
-    recipeid
-    eventid
-)
-
-ingredients
 
 
 
