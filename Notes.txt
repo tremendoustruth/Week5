@@ -57,4 +57,16 @@ one to one: 1 user --> contactinfo//1 post --> 1 user//
 one to many: 1 post -> many pictures// 1 user --> many comments// 1 group --> many users// 1 group--> many posts //1 user-->many posts (group of standard)
 many to many: many users to many groups// 
 
+Joins:
+Once table created, can join tables with primary and foreign keywords
+alias: select fname(alias) AS first_name (helps with long queries)
+does not modify tables. 
+
+Questions: what is a class?
+What is postgres?
+How to use Heroku?
+
+
+
+
 
